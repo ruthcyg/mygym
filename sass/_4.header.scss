@@ -178,6 +178,9 @@
   //*-*-*-*-*-*-*-*-*-*-- The 800px Mark Break Point*-*-*-*-*-*-*-*-*-*-*
 
   @include media-tablet {
+      //perspective:70rem; if this is applied  here
+      // it's going to change our position fixed position 
+      ///to absolute creating weird effect
     &__nav {
       position: fixed;
       top: 0;

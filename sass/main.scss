@@ -28,9 +28,10 @@
   }
 
 //////////////////////////////////////////////////////////////////
-//   ::selection {
-//     background-color: var(--color-primary);
-//   }
+////////this is to check the background text color when selected
+  ::selection {
+    background-color:var(--color-primary);
+  }
 
 @import "1.reset";
 @import "2.variables";
@@ -43,6 +44,85 @@
 @import "9.testimonials";
 @import "10.clients";
 @import "11.register";
-@import "12.footer"
+@import "12.footer";
 
+
+// *-*-*-*-*-*-*-*-*-*-*-*-*-*-*- Placeholder Styles *-*-*-*-*-*-*-*-*-*-*-*-*
+// Background Properties is a placeholder rule set %
+//it help to minimize the codes
+%bg {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  // Section Padding
+  %sec-padding {
+    padding: 6vh 4vw;
+  }
+  
+  // Styles for Section headings (h2)
+  %sec-heading {
+    font-size: font-size(font-size-medium);
+    font-weight: font-weight(font-weight-light);
+    letter-spacing: 0.2rem;
+    color: var(--color-quinary);
+  }
+  
+  // Styles for Section paragraphs (p)
+  %sec-para {
+    font-size: font-size(font-size-small);
+    color: var(--color-quinary);
+    font-family: "Balsamiq Sans", cursive;
+    letter-spacing: 0.2rem;
+  }
+  
+  //Styles for Section h3
+  %sec-h3 {
+    font-size: font-size(font-size-small);
+    color: var(--color-quinary);
+  }
+  
+  //Styles for Section h4
+  %sec-h4 {
+    color: var(--color-quinary);
+  }
+  
+  //************************** Scroll to top button *******************
+  .scroll {
+    position: fixed;
+    bottom: 70rem;
+    right: 4rem;
+    height: 4rem;
+    width: 4rem;
+    background-image: url("../img/scroll/scroll.svg");
+    background-repeat: no-repeat;
+    background-color: var(--color-secondary-m);
+    background-size: contain;
+    background-position: center;
+    padding: 1rem;
+    border-radius: 50%;
+    z-index: 30;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.5s cubic-bezier(1, 0, 0, 1);
+  }
+  
+  .scroll.active {
+    visibility: visible;
+    opacity: 1;
+    bottom: 4rem;
+  }
+  
+  //*-*-*-*-*-*- Dark Mode Smooth Transition For All HTML Elements
+  //  visit dark mode file-*-*-*-*-*-*-*
+  html.transition,
+  html.transition *,
+  html.transition *::before,
+  html.transition *::after {
+    transition: all 0.5s !important;
+    transition-delay: 0 !important;
+  }
+  
 
