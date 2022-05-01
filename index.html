@@ -19,7 +19,7 @@
     <link rel="shortcut icon" type="image/svg" href="up/img/logo/favicon.svg" />
 
     <link rel="stylesheet" href="up/css/main.css">
-    <title>gym | flexible fitness</title>
+    <title>gYm | flexible fitness</title>
 </head>
 <body class="container">
     
@@ -109,8 +109,8 @@
       </p>
       <div class="showcase__content--links">
        <!---- a*2[href=#]-->
-       <a href="#">Find out more</a>
-       <a href="#">Join now </a>
+       <a href="#registers">Find out more</a>
+       <a href="#registers">Join now </a>
       </div>
     </div>
     </section>
@@ -197,7 +197,7 @@
           your  exercise
           without risk of injury.
         </p>
-        <a href="#" class="features__content--link"
+        <a href="#register" class="features__content--link"
           >Read More
           <span></span>
           <span></span>
@@ -488,8 +488,10 @@
     <!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-* Client Section *-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->
 
 <section class="clients">
+
   <h2 class="clients__title">Our Clients</h2>
       <div class="clients__content">
+        <!--div*8.clients__content--img>img[alt="clint-$"][src="up/img/clients/client-$.png"]-->
         <div class="clients__content--img">
           <img src="up/img/clients/client-1.png" alt="client-1" />
         </div>
@@ -525,20 +527,336 @@
 </section>
 
 
-    
+    <!---*-*-*-*-*-*-*-*--*-*-*- Scroll to Top Button --*-*-*-*-*-*-*-*-*-*-*-->
+    <div class="scroll"></div>
       
     <!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-* Register Section*-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->
 
-<section class="register">
-  Register is free
+
+  <!--section class="register btn--show-modal"-->
+  <section class="register" id="registers">
+
+
+    <!---experiment--
+    <div class="modal hidden">
+      <button class="btn--close-modal">&times;</button>
+      <h2 class="modal__header">
+          Thank you we will get soon!
+          
+      </h2>
+</div>-->
+
+    <!-- Register Progress -->
+
+    <div class="register__progress">
+      <div class="register__progress--step">
+        <span>1</span>
+        <i class="fa fa-check"></i>
+      </div>
+
+      <div class="register__progress--step">
+        <span>2</span>
+        <i class="fa fa-check"></i>
+      </div>
+
+      <div class="register__progress--step">
+        <span>3</span>
+        <i class="fa fa-check"></i>
+      </div>
+
+      
+      <div class="register__progress--step">
+        <span>4</span>
+        <i class="fa fa-check"></i>
+      </div>
+    </div>
+
+    <!-- Register Content -->
+    <div class="register__content">
+      <div class="register__content--form">
+        <!-- *-*-*-*-*-*-* First Page Starts Here *-*-*-*-*-*-*-*-* -->
+
+        <div class="register__content--form__page">
+          <!-- First Name -->
+          <div class="register__content--form__page--field">
+            <label for="first-name">First Name</label>
+            <input type="text" />
+          </div>
+
+          <!-- Last Name -->
+          <div class="register__content--form__page--field">
+            <label for="last-name">Last Name</label>
+            <input type="text" />
+          </div>
+
+          <!-- Next Button -->
+          <div class="register__content--form__page--field">
+            <button class="next-1 next">Next</button>
+          </div>
+        </div>
+
+        <!-- *-*-*-*-*-*-* First Page Ends Here *-*-*-*-*-*-*-*-* -->
+
+        <!-- *-*-*-*-*-*-* Second Page Starts Here *-*-*-*-*-*-*-*-* -->
+
+        <div class="register__content--form__page">
+          <!-- Email Address -->
+          <div class="register__content--form__page--field">
+            <label for="email-address">Email Address</label>
+            <input type="email" />
+          </div>
+
+          <!-- Phone Number -->
+          <div class="register__content--form__page--field">
+            <label for="phone-number">Phone Number</label>
+            <input type="number" />
+          </div>
+
+          <!-- Next Button -->
+          <div class="register__content--form__page--field btns">
+            <button class="prev-1 prev">Previous</button>
+            <button class="next-2 next">Next</button>
+          </div>
+        </div>
+
+        <!-- *-*-*-*-*-*-* Second Page Ends Here *-*-*-*-*-*-*-*-* -->
+
+        <!-- *-*-*-*-*-*-* Third Page Starts Here *-*-*-*-*-*-*-*-* -->
+
+        <div class="register__content--form__page">
+          <!-- Data of Birth -->
+          <div class="register__content--form__page--field">
+            <!--label for="date-of-birth">Data of Birth</label>-->
+            <label for="date-of-birth">Gender</label>
+            <input type="text" />
+          </div>
+
+          <!-- Gender -->
+          <div class="register__content--form__page--field">
+            <label for="gender">Address</label>
+            <select>
+              <option value="female">Female</option>
+              <option value="male">Male</option>
+              <option value="other">Other</option>
+            </select>
+          </div>
+
+          <!-- Next Button -->
+          <div class="register__content--form__page--field btns">
+            <button class="prev-2 prev">Previous</button>
+            <button class="next-3 next">Next</button>
+          </div>
+        </div>
+
+        <!-- *-*-*-*-*-*-* Third Page Ends Here *-*-*-*-*-*-*-*-* -->
+
+        <!-- *-*-*-*-*-*-* Forth Page Starts Here *-*-*-*-*-*-*-*-* -->
+
+        <div class="register__content--form__page">
+
+          <!-- Username -->
+          <div class="register__content--form__page--field">
+            <label for="usernaame">Age</label>
+            <input type="number" />
+          </div>
+
+          <!-- Password -->
+          <div class="register__content--form__page--field">
+            <label for="diet">Food</label>
+            <!--input type="password" /-->
+            <select>
+              <option value="Veg">Veg</option>
+              <option value="Non-veg">Non-Veg</option>
+              <option value="Both">Both</option>
+            </select>
+          </div>
+
+          <!-- Next Button -->
+          <div class="register__content--form__page--field btns">
+            <button class="prev-3 prev">Previous</button>
+
+            
+
+
+            <button class="submit">Submit</button>
+          </div>
+        </div>
+
+        <!-- *-*-*-*-*-*-* Forth Page Ends Here *-*-*-*-*-*-*-*-* -->
+      </div>
+    </div>
 </section>
 
-    
+<!---------------------experiment-->
+<div class="overlays hidden"></div>
       
     <!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-* Footer Section *-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->
       <footer class="footer">
 
-        FOOTER
+        <div class="footer__content">
+          <!-- About Us -->
+          <div class="footer__content--about-us footer__content--section">
+            <i class="fas fa-user-friends"></i>
+            <h3
+              class="footer__content--about-us__title footer__content--section__title"
+            >
+              About us
+            </h3>
+            <a
+              href="#"
+              class="footer__content--about-us__link footer__content--section__link"
+              >gYm in a nutshell</a
+            >
+  
+            <a
+              href="#"
+              class="footer__content--about-us__link footer__content--section__link"
+              >What we do</a
+            >
+  
+            <a
+              href="#"
+              class="footer__content--about-us__link footer__content--section__link"
+              >History</a
+            >
+  
+            <a
+              href="#"
+              class="footer__content--about-us__link footer__content--section__link"
+              >Location</a
+            >
+  
+            <a
+              href="#"
+              class="footer__content--about-us__link footer__content--section__link"
+              >Management Team</a
+            >
+          </div>
+  
+          <!-- Gym Classes -->
+          <div class="footer__content--classes footer__content--section">
+            <i class="fas fa-dumbbell"></i>
+            <h3
+              class="footer__content--classes__title footer__content--section__title"
+            >
+              Gym Classes
+            </h3>
+            <a
+              href="#"
+              class="footer__content--classes__link footer__content--section__link"
+              >Overview</a
+            >
+  
+            <a
+              href="#"
+              class="footer__content--classes__link footer__content--section__link"
+              >Classes alternate view</a
+            >
+  
+            <a
+              href="#"
+              class="footer__content--classes__link footer__content--section__link"
+              >Class Pricing</a
+            >
+  
+            <a
+              href="#"
+              class="footer__content--classes__link footer__content--section__link"
+              >Single Class</a
+            >
+  
+            <a
+              href="#"
+              class="footer__content--classes__link footer__content--section__link"
+              >Find out more</a
+            >
+          </div>
+  
+          <!-- Newsletter -->
+          <div class="footer__content--newsletter footer__content--section">
+            <i class="far fa-newspaper"></i>
+            <h3
+              class="footer__content--newsletter__title footer__content--section__title"
+            >
+              Newsletter
+            </h3>
+            <p
+              class="footer__content--newsletter__para footer__content--section__para"
+            >
+              Subscribe to our newsletter to receive regular updates & news from
+              us.
+            </p>
+            <input type="email" placeholder="Your Email" />
+            <input type="submit" value="Send" />
+          </div>
+  
+          <!-- Head Office -->
+          <div class="footer__content--address footer__content--section">
+            <!-- Address -->
+            <i class="fas fa-map-marked-alt"></i>
+            <h3
+              class="footer__content--address__title footer__content--section__title"
+            >
+              Head Office
+            </h3>
+            <p
+              class="footer__content--address__para footer__content--section__para"
+            >
+              STREET NO 10, PUNE, INDIA
+            </p>
+  
+            <!-- Email -->
+            <i class="far fa-envelope-open"></i>
+            <h3
+              class="footer__content--address__title footer__content--section__title"
+            >
+              Email Us
+            </h3>
+            <p
+              class="footer__content--address__para footer__content--section__para"
+            >
+              ewho.ruth2014@gmail.com
+            </p>
+          </div>
+        </div>
+  
+        <!-- Footer Logo -->
+        <div class="footer__logo">
+          <img src="up/img/logo/footer.svg" alt="footer-logo" />
+          <span>gYm</span>
+        </div>
+  
+        <!-- Footer Social -->
+        <div class="footer__social">
+          <!-- Call -->
+          <div class="footer__social--call">
+            <i class="fas fa-phone-alt"></i>
+            <p class="footer__social--call__para">CALL US NOW: +917709065334</p>
+          </div>
+  
+          <!-- Social Icons -->
+          <div class="footer__social--icons">
+            <!-- Facebook -->
+            <a href="#" class="footer__social--icons__link">
+              <i class="fab fa-facebook-f"></i>
+            </a>
+  
+            <!-- Instagram -->
+            <a href="#" class="footer__social--icons__link">
+              <i class="fab fa-instagram"></i>
+            </a>
+  
+            <!-- Twitter -->
+            <a href="#" class="footer__social--icons__link">
+              <i class="fab fa-twitter"></i>
+            </a>
+  
+            <!-- YouTube -->
+            <a href="#" class="footer__social--icons__link">
+              <i class="fab fa-youtube"></i>
+            </a>
+          </div>
+        </div>
 
       </footer>
     <!-- *-*-*-*-*-*-*-*-*-*-*-*-*-*-* JavaScript Files *-*-*-*-*-*-*-*-*-*-*-*-*-*-* -->

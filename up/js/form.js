@@ -29,6 +29,12 @@ const progressTick = document.querySelectorAll(".fa-check");
 let max = 4;
 let current = 1;
 
+
+///////////////////////////////////////
+
+
+///////////////////////////////////////
+
 // The Next Button Event Listener Function
 function tick() {
   progressStep[current - 1].classList.add("active");
@@ -63,15 +69,26 @@ secondNextBtn.addEventListener("click", () => {
 thirdNextBtn.addEventListener("click", () => {
   slidePage.style.marginLeft = "-200%";
   tick();
+  
 });
 
+
+
+
+////////////////////////////////
+
+
+/////////////////////////////
 // Submit Button Event Listener
 submitBtn.addEventListener("click", () => {
   tick();
-  setTimeout(() => {
-    alert("Your Form Has Been Successfully Submitted. Thank You My Friend");
-    location.reload();
-  }, 1000);
+  
+
+ // setTimeout(() => {
+  //  alert("Your Form Has Been Successfully Submitted. Thank You My Friend");
+     
+  //  location.reload();
+ // }, 1000);
 });
 
 //*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*- Previous Btns Events
@@ -93,3 +110,5 @@ thirdPrevBtn.addEventListener("click", () => {
   slidePage.style.marginLeft = "-100%";
   untick();
 });
+
+
